@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- Left section describing the application with box around it -->
+        <div class="left-section">
+            <h2>What is Budget Buddy?</h2>
+            <p>
+                Budget Buddy is a modern financial tracking tool that helps you keep an eye on your spending 
+                and savings. It allows you to log transactions, track your credits and debits, and view 
+                your balance in real-time. Whether you're managing your personal finances or keeping track 
+                of expenses, Budget Buddy is designed to make it simple and effective.
+            </p>
+        </div>
+
+        <!-- Right section for the login form -->
+        <form id="login-form" class="form">
+            <p class="form-title">Sign in to your account</p>
+            <div class="input-container">
+                <input type="text" id="login-username" placeholder="Enter username" required>
+            </div>
+            <div class="input-container">
+                <input type="password" id="login-password" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="submit">Sign in</button>
+            <p class="signup-link">
+                No account?
+                <a href="signup.html">Sign up</a>
+            </p>
+        </form>
+    </div>
+    
+    <script src="auth.js"></script>
+</body>
+</html>

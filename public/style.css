@@ -1,0 +1,784 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark-blue: #184e77;
+    --medium-blue: #3E5F70;
+    --taupe: #8A7F70;
+    --light-beige: #BFD7EA;
+    --white: #FEF9D9;
+    --green-blue:#e0efff;
+    --light-gray:#;
+}
+
+/* Basic styles */
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding-left:5px;
+    padding-right:5px ;
+    background: linear-gradient(170deg, #f5f5dc, #1f889d);/* Gradient from light-beige to a light gray */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gowun Batang", serif;
+
+}
+
+/* Navbar styling */
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+}
+
+.hamburger-menu {
+    position: absolute;
+    right: 0;
+    top: 60px; /* Adjust based on navbar height */
+    background-color: white;
+    border: 1px solid var(--taupe);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.hamburger-menu button {
+    display: flex;
+    justify-content: center;
+    margin: 15px 15px;
+    width: 90%;
+    padding: 10px;
+    padding-left: 5px;
+    background-color: var(--medium-blue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hamburger-menu button:hover {
+    background-color: #3E5F70; /* Darken color on hover */
+}
+
+
+
+/* Styles for the profile picture to make it circular */
+#profile-picture {
+    border-radius: 50%; /* This makes the image circular */
+    width: 40px;        /* Adjust the size to your preference */
+    height: 40px;       /* Ensure the height and width are the same for a perfect circle */
+    object-fit: cover;  /* Ensures the image fits nicely within the circular frame */
+    border: 2px solid #ccc; /* Optional: Add a border around the profile picture */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark-blue: #184e77;
+    --medium-blue: #3E5F70;
+    --taupe: #8A7F70;
+    --light-beige: #BFD7EA;
+    --white: #FEF9D9;
+    --green-blue:#e0efff;
+    --light-gray:#;
+}
+
+/* Basic styles */
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding-left:5px;
+    padding-right:5px ;
+    background: linear-gradient(170deg, var(--light-beige), #1f889d); /* Gradient from light-beige to a light gray */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gowun Batang", serif;
+
+}
+
+/* Navbar styling */
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+}
+
+.hamburger-menu {
+    position: absolute;
+    right: 0;
+    top: 60px; /* Adjust based on navbar height */
+    background-color: white;
+    border: 1px solid var(--taupe);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.hamburger-menu button {
+    display: flex;
+    justify-content: center;
+    margin: 15px 15px;
+    width: 90%;
+    padding: 10px;
+    padding-left: 5px;
+    background-color: var(--medium-blue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hamburger-menu button:hover {
+    background-color: #3E5F70; /* Darken color on hover */
+}
+
+
+
+/* Styles for the profile picture to make it circular */
+#profile-picture {
+    border-radius: 50%; /* This makes the image circular */
+    width: 40px;        /* Adjust the size to your preference */
+    height: 40px;       /* Ensure the height and width are the same for a perfect circle */
+    object-fit: cover;  /* Ensures the image fits nicely within the circular frame */
+    border: 2px solid #ccc; /* Optional: Add a border around the profile picture */
+}
+
+.profile-modal {
+    display: none; /* Hidden by default */
+    position: absolute;
+    right: 10px; /* Position 10px from the right */
+    top: 80px; /* Adjust as needed based on navbar height */
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px; /* Adjust the width as needed */
+}
+
+.profile-modal img {
+    border-radius: 50%;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Keep height and width the same for a circle */
+    object-fit: cover;
+}
+
+
+
+.profile-modal .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-modal h2 {
+    margin: 10px 0;
+}
+
+.profile-modal p {
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+}
+
+.profile-modal button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.profile-modal button:hover {
+    background-color: #d32f2f;
+}
+
+/* Additional Layout Adjustments */
+.navbar-left {
+    position: relative; /* To contain the absolute positioning of the modal */
+}
+
+
+
+.navbar-right button {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-top: 15px;
+    box-shadow:  0 8px 8px rgba(0.2, 0.2, 0.2, 0.2);;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    margin-right: 10px; /* Adds some space between the image and the text */
+}
+
+.user-info h2 {
+    margin: 0;
+}
+/* Add this CSS to your stylesheet */
+#profile-modal {
+    margin-top: 40px; /* Adjust this value as needed */
+    /* Add any other styles for your modal */
+}
+
+/* Main container styling */
+.main-container {
+    text-align: center;
+    background: linear-gradient(170deg, #f5f5dc, #1f889d); /* Gradient from light-beige to a light gray */
+    padding: 4rem;
+    /* border-radius: 10px; */
+    box-shadow: 0 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+    width: 100%;
+    /* margin: 5rem; */
+}
+
+
+/* Summary container styling */
+.summary-container {
+    margin-top: 50px; /* Adjust this value to increase space between navbar and summary-container */
+}
+
+/* Transaction form styling */
+#transaction-form {
+    margin: 1rem 0;
+}
+
+#transaction-form input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 30%;
+    border: 1px solid var(--taupe);
+    border-radius: 5px;
+}
+
+#total-balance {
+    color: rgb(0, 0, 0); 
+}
+
+/* Balance summary container */
+.balance-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+/* Individual balance items */
+.balance-item_credit,
+.balance-item_expense {
+    font-size: 30px;
+    text-align: center;
+    flex: 1; /* Make each item take equal space */
+    padding: 10px;
+    color: black;
+}
+
+/* Separate the balance items with margin */
+.balance-item_credit {
+    background: linear-gradient(135deg, #00b35c, #005f3d); /* Gradient from light to dark green */
+    margin-right: 10px; /* Add right margin for spacing */
+    border-radius: 5px;
+    padding: 10px; /* Add padding for better appearance */
+    color: white; /* Change text color to white for better contrast */
+}
+
+.balance-item_expense {
+    font-size: 30px;
+    background: linear-gradient(135deg, rgb(228, 50, 50), rgb(150, 20, 20)); /* Gradient from light to dark red */
+    margin-left: 10px; /* Add left margin for spacing */
+    border-radius: 5px;
+    padding: 10px; /* Add padding for better appearance */
+    color: white; /* Change text color to white for better contrast */
+}
+
+/* Headings and paragraph for balance amounts */
+.balance-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.balance-item p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Styling for Total Credit and Total Expense */
+#total-credit {
+    font-size: 30px;
+    color: rgb(255, 255, 255); /* Color for credit */
+}
+
+#total-expense {
+    font-size: 30px;
+    color: rgb(255, 255, 255); /* Color for expense */
+}
+
+/* Optional: Add hover effects or animations for a modern touch */
+.balance-item:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+/* Search container */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* Search input and button */
+#search-date {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; /* Take up remaining space */
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient from light to dark blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Button styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.green-button {
+    background: linear-gradient(135deg, #00b35c, #008255);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    width: 110px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.red-button {
+    background: linear-gradient(135deg, rgb(228, 50, 50), rgb(186, 18, 18));
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-left: 0.5rem;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Transaction table styling */
+.History-container{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    margin-top: 35px;
+    box-shadow: 0 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+}
+#transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#transaction-table th{
+    border: 1px solid var(--taupe);
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: bold; 
+    font-size: 18px;
+}
+#transaction-table td {
+    border: 1px solid var(--taupe);
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: bold; 
+}
+
+
+#transaction-table th {
+    background-color: var(--medium-blue);
+    color: var(--white);
+}
+
+#transaction-table tbody tr:nth-child(even) {
+    background-color: var(--green-blue);
+}
+
+#transaction-table tbody tr:nth-child(odd) {
+    background-color: var(--light-beige); /* You can change this color to suit your design */
+}
+
+.transaction-container{
+    background-color:white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 0 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+}
+.credit {
+    color: #4CAF50;
+}
+
+.debit {
+    color: #f44336;
+}
+
+
+/* Additional Layout Adjustments */
+.navbar-left {
+    position: relative; /* To contain the absolute positioning of the modal */
+}
+
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-text {
+    margin-left: 10px;
+}
+
+.user-text h2 {
+    margin: 0;
+}
+
+.user-text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Add this CSS to your stylesheet */
+#profile-modal {
+    margin-top: 40px; /* Adjust this value as needed */
+    /* Add any other styles for your modal */
+}
+
+/* Main container styling */
+.main-container {
+    text-align: center;
+    background: linear-gradient(170deg, var(--light-beige), #1f889d); /* Gradient from light-beige to a light gray */
+    padding: 4rem;
+    /* border-radius: 10px; */
+    box-shadow: 0 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+    width: 100%;
+    /* margin: 5rem; */
+}
+
+
+/* Summary container styling */
+.summary-container {
+    margin-top: 50px; /* Adjust this value to increase space between navbar and summary-container */
+}
+
+/* Transaction form styling */
+#transaction-form {
+    margin: 1rem 0;
+}
+
+#transaction-form input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 30%;
+    border: 1px solid var(--taupe);
+    border-radius: 5px;
+}
+
+#total-balance {
+    color: green; /* Default color for positive or zero balance */
+}
+
+/* Balance summary container */
+.balance-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+/* Individual balance items */
+.balance-item_credit,
+.balance-item_expense {
+    font-size: 30px;
+    text-align: center;
+    flex: 1; /* Make each item take equal space */
+    padding: 10px;
+    color: black;
+}
+
+/* Separate the balance items with margin */
+.balance-item_credit {
+    background: linear-gradient(135deg, #00b35c, #005f3d); /* Gradient from light to dark green */
+    margin-right: 10px; /* Add right margin for spacing */
+    border-radius: 5px;
+    padding: 10px; /* Add padding for better appearance */
+    color: white; /* Change text color to white for better contrast */
+}
+
+.balance-item_expense {
+    font-size: 30px;
+    background: linear-gradient(135deg, rgb(228, 50, 50), rgb(150, 20, 20)); /* Gradient from light to dark red */
+    margin-left: 10px; /* Add left margin for spacing */
+    border-radius: 5px;
+    padding: 10px; /* Add padding for better appearance */
+    color: white; /* Change text color to white for better contrast */
+}
+
+/* Headings and paragraph for balance amounts */
+.balance-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.balance-item p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Styling for Total Credit and Total Expense */
+#total-credit {
+    font-size: 30px;
+    color: rgb(255, 255, 255); /* Color for credit */
+}
+
+#total-expense {
+    font-size: 30px;
+    color: rgb(255, 255, 255); /* Color for expense */
+}
+
+/* Optional: Add hover effects or animations for a modern touch */
+.balance-item:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+/* Search container */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* Search input and button */
+#search-date {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; /* Take up remaining space */
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient from light to dark blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Button styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.green-button {
+    background: linear-gradient(135deg, #00b35c, #008255);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    width: 110px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.red-button {
+    background: linear-gradient(135deg, rgb(228, 50, 50), rgb(186, 18, 18));
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-left: 0.5rem;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Transaction table styling */
+.History-container{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    margin-top: 35px;
+    box-shadow: 0 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+}
+#transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#transaction-table th{
+    border: 1px solid var(--taupe);
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: bold; 
+    font-size: 18px;
+}
+#transaction-table td {
+    border: 1px solid var(--taupe);
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: bold; 
+}
+
+
+#transaction-table th {
+    background-color: var(--medium-blue);
+    color: var(--white);
+}
+
+#transaction-table tbody tr:nth-child(even) {
+    background-color: var(--green-blue);
+}
+
+#transaction-table tbody tr:nth-child(odd) {
+    background-color: var(--light-beige); /* You can change this color to suit your design */
+}
+
+.transaction-container{
+    background-color:white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 0 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+}
+.credit {
+    color: #4CAF50;
+}
+
+.debit {
+    color: #f44336;
+}
