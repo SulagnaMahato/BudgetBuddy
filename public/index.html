@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logofinal.png" type="image/x-icon">
@@ -17,9 +18,9 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-left">
-            <img src="logofinal.png" width="90px" height="50px" alt="Budget Buddy Logo">
-            <span class="tagline">"Because every buddy needs a budget💸"</span>
-        </div>
+    <img src="logofinal.png" width="90px" height="50px" alt="Budget Buddy Logo" onclick="openTeamModal()">
+    <span class="tagline">"Because every buddy needs a budget💸"</span>
+</div>
         
 
         <div class="navbar-right">
@@ -37,6 +38,8 @@
         
     </nav>
 
+    
+
     <!-- Profile Modal (Hidden by default) -->
     <div id="profile-modal" class="profile-modal">
         <div class="modal-content">
@@ -47,6 +50,178 @@
             <button id="modal-logout-button" onclick="logout()">Logout</button>
         </div>
     </div>
+
+
+    <!-- Team Member Modal -->
+<!-- Team Member Modal -->
+<div id="team-modal" class="team-modal">
+    <div class="modal-content2">
+        <span class="close-button" onclick="closeTeamModal()">&times;</span> <!-- Close Button -->
+        
+        <div class="responsive-container-block container">
+            <p class="text-blk team-head-text">
+              Meet The Team !!
+            </p>
+            <p class="text-blk team-name-text">
+                localhost:0000
+              </p>
+            <div class="responsive-container-block">
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="ASSEST/TEAM MEM 1.jpg">
+                  </div>
+                  <p class="text-blk name">
+                    Senapati Arpan
+                  </p>
+                  <p class="text-blk position">
+                    TEAM LEADER
+                  </p>
+                  <div class="social-icons">
+                    <a href="https://github.com/Senapati5" target="_blank">
+                      <img class="github-icon" src="ASSEST/github-mark.png" width="25px" height="25px">
+                    </a>
+                    <a href="https://www.linkedin.com/in/senapati-arpan-5a5831278/" target="_blank">
+                      <img class="linkedin-icon" src="ASSEST/linked in.png" width="30px" height="30px">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="ASSEST/TEAM MEM 2.jpeg">
+                  </div>
+                  <p class="text-blk name">
+                    Harajit Chandra Das
+                  </p>
+                  <p class="text-blk position">
+                    VICE TEAM LEADER
+                  </p>
+                  <div class="social-icons">
+                    <a href="https://github.com/HARAJIT05" target="_blank">
+                      <img class="github-icon" src="ASSEST/github-mark.png" width="25px" height="25px">
+                    </a>
+                    <a href="https://www.linkedin.com/in/harajit-das-a89786235/" target="_blank">
+                      <img class="linkedin-icon" src="ASSEST/linked in.png" width="30px" height="30px">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="ASSEST/TEAM MEM 3.jpg">
+                  </div>
+                  <p class="text-blk name">
+                    Priya Naiya
+                  </p>
+                  <p class="text-blk position">
+                    BACKEND DEVELOPER
+                  </p>
+                  <div class="social-icons">
+                    <a href="https://github.com/naiyapriya" target="_blank">
+                      <img class="twitter-icon" src="ASSEST/github-mark.png" width="25px" height="25px">
+                    </a>
+                    <a href="https://www.linkedin.com/in/contactpriyanaiya/" target="_blank">
+                      <img class="facebook-icon" src="ASSEST/linked in.png" width="30px" height="30px">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="ASSEST/TEAM MEM 4.jpeg">
+                  </div>
+                  <p class="text-blk name">
+                    Sulanga Mahato
+                  </p>
+                  <p class="text-blk position">
+                    BACKEND DEVELOPER
+                  </p>
+                  <div class="social-icons">
+                    <a href="https://github.com/SulagnaMahato" target="_blank">
+                      <img class="twitter-icon" src="ASSEST/github-mark.png" width="25px" height="25px">
+                    </a>
+                    <a href="https://www.linkedin.com/in/sulagna-mahato-3490862b3/" target="_blank">
+                      <img class="facebook-icon" src="ASSEST/linked in.png" width="30px" height="30px">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="ASSEST/TEAM MEM 5.jpg">
+                  </div>
+                  <p class="text-blk name">
+                    Abu Sahid Mistri
+                  </p>
+                  <p class="text-blk position">
+                    FRONT-END DEVELOPER
+                  </p>
+                  <div class="social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <img class="twitter-icon" src="ASSEST/github-mark.png" width="25px" height="25px">
+                    </a>
+                    <a href="https://www.linkedin.com/in/abu-sahid-mistri-a798612b9/" target="_blank">
+                      <img class="facebook-icon" src="ASSEST/linked in.png" width="30px" height="30px">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="ASSEST/TEAM  MEM 6.jpg">
+                  </div>
+                  <p class="text-blk name">
+                    Sagar Mazumder
+                  </p>
+                  <p class="text-blk position">
+                    FRONT-END DEVELOPER
+                  </p>
+                  <div class="social-icons">
+                    <a href="https://github.com/sagarmazumder" target="_blank">
+                      <img class="twitter-icon" src="ASSEST/github-mark.png" width="25px" height="25px">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <img class="facebook-icon" src="ASSEST/linked in.png" width="30px" height="30px">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="ASSEST/TEAM  MEM 7.jpg">
+                  </div>
+                  <p class="text-blk name">
+                    Rimjhim Saha
+                  </p>
+                  <p class="text-blk position">
+                    UI/UX DESIGNER
+                  </p>
+                  
+                  <div class="social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                      <img class="twitter-icon" src="ASSEST/github-mark.png" width="25px" height="25px">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <img class="facebook-icon" src="ASSEST/linked in.png" width="30px" height="30px">
+                    </a>
+                  </div>
+                </div>
+            </div>
+             
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+
 
     <!-- Main content container -->
     <div class="main-container">
@@ -106,7 +281,33 @@
             </table>
         </div>
     </div>
+    <script>
+              function checkUserLoggedIn() {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = '/login.html';
+            }
+        }
 
+        window.onload = checkUserLoggedIn;
+        // Function to open the team modal
+        function openTeamModal() {
+            document.getElementById('team-modal').style.display = 'block';
+        }
+
+        // Function to close the team modal
+        function closeTeamModal() {
+            document.getElementById('team-modal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside the content
+        window.onclick = function(event) {
+            let modal = document.getElementById('team-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
     <script src="app.js"></script>
 </body>
 </html>

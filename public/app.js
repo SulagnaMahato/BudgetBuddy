@@ -126,7 +126,7 @@ function updateTransactionList(transactions) {
     transactions.forEach(transaction => {
         const row = document.createElement('tr');
         const amountClass = transaction.amount > 0 ? 'credit' : 'debit';
-        const type = transaction.amount > 0 ? 'Credit' : 'Debit';
+        const type = transaction.amount > 0 ? 'Credit' : 'Expense';
         const displayAmount = transaction.amount > 0 ? 
             `₹${transaction.amount.toFixed(0)}` : 
             `₹${Math.abs(transaction.amount).toFixed(2)}`;
@@ -243,3 +243,5 @@ function searchTransactions() {
         console.error('Error searching transactions:', error);
     });
 }
+
+

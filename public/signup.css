@@ -105,12 +105,12 @@ body {
 
 /* Adjust specific styling for file input */
 .input-container input[type="file"] {
-    padding: 0; /* Remove padding to make it look better */
-    font-size: 1rem; /* Adjust font size for consistency */
+    padding: 1rem; /* Remove padding to make it look better */
+    font-size: 0.875rem; /* Adjust font size for consistency */
     cursor: pointer;
-    height: 55px; /* Set a fixed height */
-    width: 280px; /* Full width */
-    padding-right: 5px;
+    
+    width: 100%; /* Full width */
+    /* padding-right: 5px; */
 
 }
 
@@ -118,12 +118,13 @@ body {
 .submit {
     display: block;
     padding: 0.75rem;
+    margin-left: 2.5px;
     background-color: rgba(6, 85, 49, 0.6);
     color: #ffffff;
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 500;
-    width: 100%;
+    width: 86%;
     border-radius: 0.5rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -139,5 +140,5 @@ body {
 
 .signup-link a {
     text-decoration: underline;
-    color: #4F46E5;
+    color: #4F46E5;
 }
